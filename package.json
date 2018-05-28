@@ -1,0 +1,14 @@
+{
+  "main": "public/js/scripts.min.js",
+  "scripts": {
+    "babel": "babel --presets env public/js/es6 -d public/js/es5"
+  },
+  "author": "Emma Goodliffe",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "*",
+    "webpack": "*",
+    "babel-cli": "*",
+    "babel-preset-env": "*"
+  }
+}
