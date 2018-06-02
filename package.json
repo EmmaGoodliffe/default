@@ -4,8 +4,8 @@
     "babel": "babel --presets env public/js/es6 -d public/js/es5",
     "sass": "sass public/css/master.scss public/css/master.css",
     "minify": "webpack --mode production",
-    "start": "node server",
-    "build": "npm run babel && npm run minify && npm run sass && npm run start"
+    "start": "sass public/css/master.scss public/css/master.css && node server",
+    "build": "npm run babel && npm run minify && npm run start"
   },
   "author": "Emma Goodliffe",
   "license": "ISC",

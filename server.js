@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 //add jquery and p5 here
 
 app.get('*', function (req, res) {
-  res.sendFile(__dirname+"/public/html/404.html");
+  res.end("Page not found.");
 });
 
 const port = 3000;
