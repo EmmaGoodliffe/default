@@ -7,16 +7,16 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   /* grid-template-columns: 200px 1fr;
   grid-template-columns: auto 1fr; */
-  grid-template-rows: 100px 100px auto 100px;
+  grid-template-rows: 100px 100px 100px auto 100px;
   grid-template-areas:
-  "title title"
-  "header header"
-  "sidebar sidebar"
-  "content content"
-  "footer footer";
+  "title"
+  "header"
+  "sidebar"
+  "content"
+  "footer";
   grid-gap: 10px;
 }
 
@@ -62,11 +62,10 @@
     grid-template-columns: 1fr 300px 700px 1fr;
     /* grid-template-columns: 200px 1fr;
     grid-template-columns: auto 1fr; */
-    grid-template-rows: 10% 10% 1fr 1fr;
+    grid-template-rows: 10% 10% 1fr 10%;
     grid-template-areas:
     ". title title ."
     ". header . ."
-    ". sidebar content ."
     ". sidebar content ."
     ". footer footer .";
   }
