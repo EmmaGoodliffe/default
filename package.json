@@ -13,9 +13,11 @@
     "express": "*",
     "webpack": "*",
     "webpack-cli": "*",
-    "babel-cli": "*",
-    "babel-preset-env": "*",
     "body-parser": "*",
-    "sass": "*"
+    "sass": "*",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
   }
 }
