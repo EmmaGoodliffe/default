@@ -9,8 +9,10 @@
   },
   "author": "Emma Goodliffe",
   "license": "ISC",
+  "dependencies": {
+    "express": "*"
+  },
   "devDependencies": {
-    "express": "*",
     "webpack": "*",
     "webpack-cli": "*",
     "body-parser": "*",
