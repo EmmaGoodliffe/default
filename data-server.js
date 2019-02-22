@@ -10,8 +10,7 @@ app.get('/', function (req, res) {
 
 app.use(express.static('public'));
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
 
 // initialise the data
 let theData = {"original": null};
