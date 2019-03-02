@@ -3,15 +3,12 @@ var webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
-  devtool: debug ? "inline-sourcemap" : null,
+  devtool: fasle,
   entry: "./public/js/scripts.js",
   output: {
     path: __dirname + "/public/js",
-    filename: "scripts.min.js"
-  },
+    filename: "scripts.min.js" },
   plugins: debug ? [] : [
-    // new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
-  ],
+    new webpack.optimize.OccurrenceOrderPlugin()
+  ]
 };
