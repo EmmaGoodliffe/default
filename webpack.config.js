@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
-  devtool: fasle,
+  devtool: false,
   entry: "./public/js/scripts.js",
   output: {
     path: __dirname + "/public/js",
