@@ -8,7 +8,7 @@
     "build": "npm run babel && npm run minify && npm run start"
   },
   "author": "Emma Goodliffe",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "*"
   },
