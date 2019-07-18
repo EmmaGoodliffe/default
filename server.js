@@ -1,21 +1,14 @@
 const http = require('http');
 const fs = require('fs');
 const express = require('express');
-let app = express();
+const app = express();
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname+"/index.html");
 });
 
-app.use(express.static('public'));
-
+// app.use(express.static('src'));
 app.use(express.urlencoded({ extended: false }));
-
-// app.get('/style.css', function (req, res) {
-//   res.sendFile(__dirname+"/css/main.css");
-// });
-
-//add jquery and p5 here
 
 app.get('*', function (req, res) {
   res.end("Page not found.");
@@ -23,5 +16,5 @@ app.get('*', function (req, res) {
 
 const port = 3000;
 app.listen(port, function () {
-  console.log("Listening on port "+port);
+  console.log("Listening at http://localhost:" + port);
 });
