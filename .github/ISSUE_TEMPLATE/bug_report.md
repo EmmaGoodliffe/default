@@ -7,24 +7,19 @@ assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!-- Check out CONTRIBUTING.md -->
 
-**To Reproduce**
-Steps to reproduce the behaviour:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+# Describe the bug
+> A clear and concise description of what the bug is...
 
-**Expected behaviour**
-A clear and concise description of what you expected to happen.
+# Expected behaviour
+> A clear and concise description of what you expected to happen...
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+# Screenshots
+> If applicable, add screenshots here...
 
-**Device**
-Include as much applicable information about your device as possible, e.g. OS, mobile/desktop, etc.
+# Device
+> As much applicable information about your device as possible, (e.g. OS, mobile/desktop, etc.)...
 
-**Additional context**
-Add any other context about the problem here.
+# Additional context and recommendations
+> Any other context about the problem and what you would do to solve it...
