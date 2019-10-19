@@ -11,11 +11,11 @@ app.use(express.urlencoded({ extended: false }));
 
 // Send index.html on '/' request
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + '/index.html');
 });
 
 // Use server on port
 const port = 3000;
 app.listen(port, () => {
-  console.log("Listening at http://localhost:" + port);
+  console.log('Listening at http://localhost:' + port);
 });
