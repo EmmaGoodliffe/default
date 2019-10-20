@@ -17,14 +17,14 @@
 - `example.file`
 
 ### Features that changed
-<!-- 🚧 A detailed description of what features were changed in each file and  how you achieved these changes 🚧 -->
+<!-- 🚧 A detailed description of what features were changed in each file and how you achieved these changes 🚧 -->
 
 # Who helped
 > A credit to people and organisations that allowed you to create this pull request...
 
-<!-- 🚧 Name any co-editors/data sources/creators here who helped you in any way 🚧 -->
+<!-- 🚧 Name of any co-editors/data sources/creators who helped you in any way 🚧 -->
 
 # Helpful info
 > Any helpful information to add to this pull request...
 
-<!-- 🚧 Provide any helpful information here like links and screenshots 🚧 -->
+<!-- 🚧 Any helpful information (e.g. screenshots) 🚧 -->
