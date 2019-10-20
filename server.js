@@ -4,18 +4,18 @@ const express = require('express');
 const app = express();
 
 // For static files
-// app.use(express.static('src'));
+app.use(express.static('dist'));
 
 // Body parser for push requests
 app.use(express.urlencoded({ extended: false }));
 
 // Send index.html on '/' request
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/dist/index.html');
 });
 
 // Use server on port
-const port = 3000;
+const port = 1234;
 app.listen(port, () => {
   console.log('Listening at http://localhost:' + port);
 });
