@@ -2,6 +2,6 @@
   "scripts": {
     "parcel-dev": "parcel watch ./index.html",
     "node-dev": "nodemon server"
-  }
+  },
   "author": "Emma Goodliffe"
 }
