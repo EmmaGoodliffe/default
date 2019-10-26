@@ -1,0 +1,23 @@
+{
+    "extends": [
+      "plugin:prettier/recommended"
+      // "plugin:react/recommended" // eslint-plugin-react
+    ],
+    "plugins": [
+      "prettier"
+      // "react"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "parserOptions": {
+      "sourceType": "module", // or "script"
+      "ecmaFeatures": {
+        "impliedStrict": true
+        // "jsx": true
+      }
+    },
+    "env": {
+      "es2017": true
+    } 
+}
