@@ -21,3 +21,5 @@
       "es2017": true
     } 
 }
+
+// npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev
