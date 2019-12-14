@@ -1,30 +1,21 @@
 <!-- Check out CONTRIBUTING.md -->
 
 # Purpose of pull request
-> A description of why this pull request is necessary/preferable and what it hopes to achieve should it be accepted...
+> A description of why this pull request is necessary/preferable and what it hopes to achieve should it be accepted (link to any issues here)...
 
-### Original inspiration
-<!-- 🚧 Reason for  making this pull request (link to any relevant issues or describe any bugs) 🚧 -->
-
-### Proposal
-<!-- 🚧 What you want to achieve with this pull request 🚧 -->
+<!-- write here -->
 
 # What changed
-> A description of what you have changed/added/removed...
+> A description of what you have changed...
 
-### Files that changed
-<!-- 🚧 Name of files that were changed formatted with back ticks (`) 🚧 -->
-- `example.file`
-
-### Features that changed
-<!-- 🚧 A detailed description of what features were changed in each file and how you achieved these changes 🚧 -->
+<!-- write here -->
 
 # Who helped
-> A credit to people and organisations that allowed you to create this pull request...
+> A credit to people and organisations that allowed you to create this pull request (e.g. co-editors/data sources/creators)...
 
-<!-- 🚧 Name of any co-editors/data sources/creators who helped you in any way 🚧 -->
+<!-- write here -->
 
 # Helpful info
-> Any helpful information to add to this pull request...
+> Any helpful information to add to this pull request (e.g. screenshots)...
 
-<!-- 🚧 Any helpful information (e.g. screenshots) 🚧 -->
+<!-- write here -->
