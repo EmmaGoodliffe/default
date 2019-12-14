@@ -16,6 +16,6 @@
 <!-- write here -->
 
 # Helpful info
-> Any helpful information to add to this pull request (e.g. screenshots)...
+> Any helpful information (e.g. screenshots)...
 
 <!-- write here -->
