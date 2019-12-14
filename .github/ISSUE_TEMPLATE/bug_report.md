@@ -16,6 +16,6 @@ assignees: ''
 
 
 # Additional context and recommendations
-> Any additional context about the problem and what you would do to solve it (e.g. availale packages)...
+> Any additional context about the problem and what you would do to solve it (e.g. availale packages, etc.)...
 
 <!-- write here -->
