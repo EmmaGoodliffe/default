@@ -24,7 +24,7 @@ assignees: ''
 
 <!-- write here -->
 
-# Recommend solutions
+# Recommend solution
 > Any recommendations for fixing the problem (e.g. list of available packages, etc.)...
 
 <!-- write here -->
