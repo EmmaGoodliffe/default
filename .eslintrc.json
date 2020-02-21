@@ -20,7 +20,7 @@
     },
     "env": {
       "es2017": true
-      // "broswer": true
+      // "browser": true
       // "jest": true
     } 
 }
