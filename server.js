@@ -1,22 +1,22 @@
-const http = require('http');
-const fs = require('fs');
-const express = require('express');
+const http = require("http");
+const fs = require("fs");
+const express = require("express");
 const app = express();
 
 // For static files
-app.use(express.static('dist'));
+app.use(express.static("dist"));
 
 // Body parser for push requests
 app.use(express.urlencoded({ extended: false }));
 
 // Send index.html on '/' request
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/dist/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/dist/index.html");
 });
 
 // Detect 404 request
-app.get('*', (req, res) => {
-  const result = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+app.get("*", (req, res) => {
+  const result = `${req.protocol}://${req.get("host")}${req.originalUrl}`;
   res.status(404);
   res.end(`Cannot GET ${result}`);
 });
@@ -24,5 +24,5 @@ app.get('*', (req, res) => {
 // Use server on port
 const port = 1234;
 app.listen(port, () => {
-  console.log('Listening at http://localhost:' + port);
+  console.log("Listening at http://localhost:" + port);
 });
