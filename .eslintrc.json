@@ -7,9 +7,9 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
-      "prettier",
-       // "react",
-      "@typescript-eslint"
+    "prettier",
+    // "react",
+    "@typescript-eslint"
   ],
   "rules": {
     "prettier/prettier": "error"
