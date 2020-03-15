@@ -1,28 +1,31 @@
 {
-    "extends": [
-      "plugin:prettier/recommended",
-      // "plugin:react/recommended", // eslint-plugin-react
-      "eslint:recommended"
-    ],
-    "plugins": [
-      "prettier"
-      // "react"
-    ],
-    "rules": {
-      "prettier/prettier": "error"
-    },
-    "parserOptions": {
-      "sourceType": "module", // or "script"
-      "ecmaFeatures": {
-        "impliedStrict": true
-        // "jsx": true
-      }
-    },
-    "env": {
-      "es2017": true
-      // "browser": true
-      // "jest": true
-    } 
+  "extends": [
+    "plugin:prettier/recommended",
+    // "plugin:react/recommended", // eslint-plugin-react
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+      "prettier",
+       // "react",
+      "@typescript-eslint"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "es2017": true,
+    "browser": true
+    // "jest": true
+  }
 }
 
-// npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev
+// npm install eslint prettier eslint-plugin-prettier eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
