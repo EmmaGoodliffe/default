@@ -1,18 +1,17 @@
-const http = require("http");
-const fs = require("fs");
 const express = require("express");
-const app = express();
+const Bundler = require("parcel-bundler");
 
-// For static files
-app.use(express.static("dist"));
+// Create express app
+const app = express();
 
 // Body parser for push requests
 app.use(express.urlencoded({ extended: false }));
 
-// Send index.html on '/' request
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/dist/index.html");
-});
+// Use parcel bundler
+const file = "index.html";
+const options = {};
+const bundler = new Bundler(file, options);
+app.use(bundler.middleware());
 
 // Detect 404 request
 app.get("*", (req, res) => {
@@ -23,6 +22,4 @@ app.get("*", (req, res) => {
 
 // Use server on port
 const port = 1234;
-app.listen(port, () => {
-  console.log("Listening at http://localhost:" + port);
-});
+app.listen(port, () => console.log(`Listening at http://localhost:${port}`));
