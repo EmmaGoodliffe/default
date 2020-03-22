@@ -19,10 +19,14 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: npm ci
+      - name: Build
+        run: npm run cd:build
       - name: Log in to git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      - name: Commit build
+        run: git commit -a -m "GitHub Action CD"
       - name: Publish to NPM
         run: npm run cd:publish
         env:
