@@ -1,6 +1,0 @@
-{
-  "presets": ["@babel/env"],
-  "plugins": ["@babel/plugin-transform-runtime"]
-}
-
-// npm i @babel/preset-env @babel/runtime @babel/plugin-transform-runtime --save-dev
