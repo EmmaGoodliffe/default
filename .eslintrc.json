@@ -1,20 +1,13 @@
 {
   "extends": [
-    "plugin:additional/recommended",
+     "eslint:recommended",
     "plugin:prettier/recommended",
     // "plugin:react/recommended", // eslint-plugin-react
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "eslint:recommended"
   ],
-  "plugins": [
-    "additional",
-    "prettier",
-    // "react",
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "prettier/prettier": "error"
+  "env": {
+    "es2017": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -23,9 +16,14 @@
       "impliedStrict": true
     }
   },
-  "env": {
-    "es2017": true
-  }
+  "plugins": [
+    "prettier",
+    // "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
 }
 
 // npm i eslint eslint-plugin-additional prettier eslint-plugin-prettier eslint-config-prettier typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
