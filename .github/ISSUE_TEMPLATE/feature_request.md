@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-<!-- Check out CONTRIBUTING.md -->
-
 # Describe the feature
 > A clear and concise description of the new feature...
 
