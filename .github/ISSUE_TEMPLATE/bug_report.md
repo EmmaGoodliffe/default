@@ -8,7 +8,7 @@ assignees: ""
 
 # Describe the bug
 
-> A clear and concise description of what the bug is...
+> A clear and concise description of the bug...
 
 <!-- write here -->
 
@@ -21,12 +21,6 @@ assignees: ""
 # Expected behaviour
 
 > A clear and concise description of what you expected to happen...
-
-<!-- write here -->
-
-# Recommend solution
-
-> Any recommendations for fixing the problem (e.g. list of available packages, etc.)...
 
 <!-- write here -->
 
