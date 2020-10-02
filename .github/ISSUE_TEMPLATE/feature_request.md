@@ -14,7 +14,7 @@ assignees: ""
 
 # Describe how this would be possible
 
-> A clear and concise description of how these changes would be made (e.g. list of available packages, etc.)...
+> A clear and concise description of how these changes could be made (e.g. list of available packages, etc.)...
 
 <!-- write here -->
 
