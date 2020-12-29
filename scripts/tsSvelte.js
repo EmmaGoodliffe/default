@@ -9,16 +9,26 @@ const packageJSON = JSON.parse(
   fs.readFileSync(path.join(projectRoot, "package.json"), "utf8"),
 );
 packageJSON.devDependencies = Object.assign(packageJSON.devDependencies, {
+  "@rollup/plugin-commonjs": "^16.0.0",
+  "@rollup/plugin-node-resolve": "^10.0.0",
+  "@rollup/plugin-typescript": "^6.0.0",
+  "@tsconfig/svelte": "^1.0.0",
+  "rollup-plugin-css-only": "^3.1.0",
+  "rollup-plugin-livereload": "^2.0.0",
+  "rollup-plugin-svelte": "^7.0.0",
+  "rollup-plugin-terser": "^7.0.0",
+  "rollup": "^2.3.4",
   "svelte-check": "^1.0.0",
   "svelte-preprocess": "^4.0.0",
-  "@rollup/plugin-typescript": "^6.0.0",
-  typescript: "^3.9.3",
+  "svelte": "^3.0.0"
   tslib: "^2.0.0",
-  "@tsconfig/svelte": "^1.0.0",
+  typescript: "^3.9.3",
 });
 
 // Add script for checking
 packageJSON.scripts = Object.assign(packageJSON.scripts, {
+  "build": "rollup -c",
+  "dev": "rollup -c -w",
   validate: "svelte-check",
 });
 
@@ -27,18 +37,6 @@ fs.writeFileSync(
   path.join(projectRoot, "package.json"),
   JSON.stringify(packageJSON, null, "  "),
 );
-
-// mv src/main.js to main.ts - note, we need to edit rollup.config.js for this too
-const beforeMainJSPath = path.join(projectRoot, "src", "main.js");
-const afterMainTSPath = path.join(projectRoot, "src", "main.ts");
-fs.renameSync(beforeMainJSPath, afterMainTSPath);
-
-// Switch the app.svelte file to use TS
-const appSveltePath = path.join(projectRoot, "src", "App.svelte");
-let appFile = fs.readFileSync(appSveltePath, "utf8");
-appFile = appFile.replace("<script>", '<script lang="ts">');
-appFile = appFile.replace("export let name;", "export let name: string;");
-fs.writeFileSync(appSveltePath, appFile);
 
 // Edit rollup config
 const rollupConfigPath = path.join(projectRoot, "rollup.config.js");
@@ -70,10 +68,7 @@ fs.writeFileSync(rollupConfigPath, rollupConfig);
 
 // Add TSConfig
 const tsconfig = `{
-  "extends": "@tsconfig/svelte/tsconfig.json",
-
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "extends": "@tsconfig/svelte/tsconfig.json"
 }`;
 const tsconfigPath = path.join(projectRoot, "tsconfig.json");
 fs.writeFileSync(tsconfigPath, tsconfig);
@@ -106,10 +101,18 @@ fs.writeFileSync(
 `,
 );
 
-console.log("Converted to TypeScript.");
+const mainTs = `import App from "./App.svelte";
 
-if (fs.existsSync(path.join(projectRoot, "node_modules"))) {
-  console.log(
-    "\nYou will need to re-run your dependency manager to get started.",
-  );
-}
+const app = new App({
+  target: document.body,
+    props: {
+      name: "world"
+    }
+});
+
+export default app;
+`;
+const mainTsPath = path.join(projectRoot, "src/main.ts");
+fs.writeFileSync(mainTsPath, mainTs);
+
+console.log("Completed TypeScript Svelte configuration. Re-install dependencies.");
