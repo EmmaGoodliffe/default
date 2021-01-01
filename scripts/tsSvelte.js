@@ -20,7 +20,7 @@ packageJSON.devDependencies = Object.assign(packageJSON.devDependencies, {
   "rollup": "^2.3.4",
   "svelte-check": "^1.0.0",
   "svelte-preprocess": "^4.0.0",
-  "svelte": "^3.0.0"
+  "svelte": "^3.0.0",
   tslib: "^2.0.0",
   typescript: "^3.9.3",
 });
