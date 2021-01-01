@@ -8,7 +8,7 @@ const projectRoot = argv[2] || path.join(__dirname, "..");
 const packageJSON = JSON.parse(
   fs.readFileSync(path.join(projectRoot, "package.json"), "utf8"),
 );
-packageJSON.devDependencies = Object.assign(packageJSON.devDependencies, {
+packageJSON.devDependencies = Object.assign(packageJSON.devDependencies || {}, {
   "@rollup/plugin-commonjs": "^16.0.0",
   "@rollup/plugin-node-resolve": "^10.0.0",
   "@rollup/plugin-typescript": "^6.0.0",
@@ -26,7 +26,7 @@ packageJSON.devDependencies = Object.assign(packageJSON.devDependencies, {
 });
 
 // Add script for checking
-packageJSON.scripts = Object.assign(packageJSON.scripts, {
+packageJSON.scripts = Object.assign(packageJSON.scripts || {}, {
   "build": "rollup -c",
   "dev": "rollup -c -w",
   validate: "svelte-check",
