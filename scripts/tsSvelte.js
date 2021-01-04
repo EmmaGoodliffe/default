@@ -114,5 +114,3 @@ export default app;
 `;
 const mainTsPath = path.join(projectRoot, "src/main.ts");
 fs.writeFileSync(mainTsPath, mainTs);
-
-console.log("Completed TypeScript Svelte configuration. Re-install dependencies.");
