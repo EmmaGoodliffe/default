@@ -51,7 +51,7 @@ import typescript from "@rollup/plugin-typescript";`,
 );
 
 // Replace name of entry point
-rollupConfig = rollupConfig.replace(`"src/main.js"`, `"src/main.ts"`);
+rollupConfig = rollupConfig.replace(`"src/index.js"`, `"src/index.ts"`);
 
 // Add preprocessor
 rollupConfig = rollupConfig.replace(
@@ -101,7 +101,7 @@ fs.writeFileSync(
 `,
 );
 
-const mainTs = `import App from "./App.svelte";
+const indexTs = `import App from "./App.svelte";
 
 const app = new App({
   target: document.body,
@@ -112,5 +112,5 @@ const app = new App({
 
 export default app;
 `;
-const mainTsPath = path.join(projectRoot, "src/main.ts");
-fs.writeFileSync(mainTsPath, mainTs);
+const indexTsPath = path.join(projectRoot, "src/index.ts");
+fs.writeFileSync(indexTsPath, indexTs);
